@@ -23,7 +23,7 @@ const Navbar = () => {
           <LuSquare className={`${isOpen ? "hidden" : "block"}`} />
         </button>
       </div>
-      <div
+      {/* <div
         className={`navbar w-full ${isOpen ? "hidden" : "block"} md:flex-grow`}
       >
         <a
@@ -56,7 +56,7 @@ const Navbar = () => {
         >
           Contact
         </a>
-      </div>
+      </div> */}
       <div className="darkmode mx-3 w-8">
         <MdOutlineDarkMode />
       </div>

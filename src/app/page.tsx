@@ -1,9 +1,15 @@
-import Navbar from "../components/Navbar/Navbar";
-import About from "../components/About/About";
+import { Metadata } from "next";
 import Hero from "../components/Hero/Hero";
+import About from "../components/About/About";
+import Navbar from "../components/Navbar/Navbar";
+import Contact from "../components/Contact/Contact";
 import Technologies from "../components/Technologies";
 import Projects from "../components/Projects/Projects";
-import Contact from "../components/Contact/Contact";
+
+export const metadata: Metadata = {
+  title: "Aditya Kanthe",
+  description: "My portfolio Website",
+};
 
 const Home = () => {
   return (
