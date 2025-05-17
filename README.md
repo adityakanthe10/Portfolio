@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This project showcases my work as a full-stack
 
 ## Live Demo
 
-You can check out the live version of the portfolio [here](https://portfolio-l8yviv95q-aditya-kanthes-projects.vercel.app/).
+You can check out the live version of the portfolio [here](https://portfolio-aditya-kanthes-projects.vercel.app/).
 
 ## Features
 
