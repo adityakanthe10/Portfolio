@@ -49,27 +49,38 @@ class Hero extends Component {
                 animate="visible"
                 className="my-2 max-w-xl py-6 font-light tracking-wide text-sm text-justify"
               >
-                I am a passionate Full Stack Developer with a knack for crafting
-                robust and scalable web applications. I have honed my skills in
-                front-end technologies like <b>HTML, CSS, ReactJS</b> and
-                back-end technologies like{" "}
-                <b>Node.js, Express.js, and MongoDB</b>. My goal is to leverage
-                my expertise to create innovative solutions that drive business
-                growth and deliver exceptional user experiences.
+                I’m a Full Stack Developer skilled in building secure,
+                high-performance web applications using modern frameworks like
+                React, Next.js, Node.js, etc. From responsive UIs to scalable
+                backends, I specialize in crafting end-to-end solutions that
+                blend functionality, aesthetics, and performance to elevate user
+                experience and business outcomes.
+                <br />
                 <div className="hero-icons flex justify-between text-xl text-gray-500 py-2">
                   <div className="py-2icons flex gap-4 mt-2">
-                    <a href="" className="hover:text-blue-50">
+                    <a
+                      href="https://www.linkedin.com/in/adityakanthe10/"
+                      className="hover:text-blue-50"
+                    >
                       <FaLinkedin />
                     </a>
-                    <a href="" className="hover:text-blue-50">
+                    <a
+                      href="https://github.com/adityakanthe10"
+                      className="hover:text-blue-50"
+                    >
                       <FaGithub />
                     </a>
-                    <a href="" className="hover:text-blue-50">
+                    <a
+                      href="https://x.com/aditya_kanthe"
+                      className="hover:text-blue-50"
+                    >
                       <FaSquareXTwitter />
                     </a>
                   </div>
                   <div className="resume-btn">
-                    <button className="flex items-center gap-2 btn text-lg px-2 py-1 border-none outline-none rounded-md cursor-pointer font-bold bg-[#0e0e1a] shadow-[0px_0px_20px_#1f4c65] hover:bg-gradient-to-l hover:from-[#021d4e] hover:to-[#1fd7e8] hover:text-[#040426] transition-all duration-600 active:scale-90">
+                    <button
+                      className="flex items-center gap-2 btn text-lg px-2 py-1 border-none outline-none rounded-md cursor-pointer font-bold bg-[#0e0e1a] shadow-[0px_0px_20px_#1f4c65] hover:bg-gradient-to-l hover:from-[#ff00cc] hover:to-[#333399] hover:text-[#040426] transition-all duration-600 active:scale-90"
+                    >
                       <LuDownload /> Resume
                     </button>
                   </div>

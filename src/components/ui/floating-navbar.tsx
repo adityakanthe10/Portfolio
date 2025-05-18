@@ -1,5 +1,5 @@
 "use client";
-import React, { JSX, useState } from "react";
+import React, { JSX, useState, useEffect } from "react";
 import {
   motion,
   AnimatePresence,
@@ -23,7 +23,7 @@ export const FloatingNav = ({
 
   const [visible, setVisible] = useState(false);
 
-  const [activeId] = useState<string>("");
+  const [activeId, setActiveId] = useState<string>("");
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
@@ -41,6 +41,42 @@ export const FloatingNav = ({
       }
     }
   });
+
+  useEffect(() => {
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveId(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // section is considered active when 50% visible
+    });
+
+    navItems.forEach((item) => {
+      const sectionId = item.link.replace("#", "");
+      const section = document.getElementById(sectionId);
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    // Cleanup function to unobserve all sections
+    return () => {
+      navItems.forEach((item) => {
+        const sectionId = item.link.replace("#", "");
+        const section = document.getElementById(sectionId);
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+      observer.disconnect();
+    };
+  }, [navItems]);
 
   return (
     <AnimatePresence mode="wait">
@@ -70,9 +106,10 @@ export const FloatingNav = ({
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500",
-                activeId === navItem.link.replace("#", "") &&
-                  "font-semibold text-blue-500 dark:text-blue-400"
+                "relative items-center flex space-x-1 hover:text-neutral-500 dark:hover:text-neutral-300",
+                activeId === navItem.link.replace("#", "")
+                  ? "text-neon-gradient text-3xl "
+                  : "text-neutral-600 dark:text-neutral-50"
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>

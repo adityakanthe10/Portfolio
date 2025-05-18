@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Hero from "../components/Hero/Hero";
-import About from "../components/About/About";
+// import About from "../components/About/About";
 import Navbar from "../components/Navbar/Navbar";
 import Contact from "../components/Contact/Contact";
 import Technologies from "../components/Technologies";
@@ -20,7 +20,7 @@ const Home = () => {
       <div className="container mx-auto px-8">
         <Navbar />
         <Hero />
-        <About />
+        {/* <About /> */}
         <Technologies />
         <Projects />
         <Contact />
