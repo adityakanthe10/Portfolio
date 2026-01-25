@@ -78,9 +78,7 @@ class Hero extends Component {
                     </a>
                   </div>
                   <div className="resume-btn">
-                    <button
-                      className="flex items-center gap-2 btn text-lg px-2 py-1 border-none outline-none rounded-md cursor-pointer font-bold bg-[#0e0e1a] shadow-[0px_0px_20px_#1f4c65] hover:bg-gradient-to-l hover:from-[#ff00cc] hover:to-[#333399] hover:text-[#040426] transition-all duration-600 active:scale-90"
-                    >
+                    <button className="flex items-center gap-2 btn text-lg px-2 py-1 border-none outline-none rounded-md cursor-pointer font-bold bg-[#0e0e1a] shadow-[0px_0px_20px_#1f4c65] hover:bg-gradient-to-l hover:from-[#ff00cc] hover:to-[#333399] hover:text-[#040426] transition-all duration-600 active:scale-90">
                       <LuDownload /> Resume
                     </button>
                   </div>

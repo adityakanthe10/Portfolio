@@ -1,7 +1,7 @@
 // import project1 from "../../public/assets/projects/project-1.jpg";
 import Swigato from "../../public/assets/projects/Swigato.png";
 import Vid_tube from "../../public/assets/projects/Vid_tube.png";
-import mainpage from "../../public/assets/projects/mainpage.png";
+import Easy from "../../public/assets/projects/Easy.png";
 import Image_fetch from "../../public/assets/projects/Image_fetch.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
@@ -10,14 +10,14 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const PROJECTS = [
   {
-    title: "StudyNotion",
-    image: mainpage,
+    title: "Easy",
+    image: Easy,
     githublink:
-      "https://github.com/adityakanthe10/StudyNotion-Online-Education-Platform-MERN-EdTech-App",
-    livelink: "https://studynotionacademy.netlify.app/",
+      "https://github.com/adityakanthe10/medium-blog",
+    livelink: "https://medium-blog-lac.vercel.app/",
     description:
-      "StudyNotion is a fully functional ed-tech platform that enables users to create, consume, and rate educational content.",
-    technologies: ["React", "Node", "Express", "MongoDB"],
+      "Easy built a modern, full-stack blogging platform designed for seamless content creation and secure user engagement.",
+    technologies: ["Next", "Node", "Express", "PostgreSQL"],
   },
   {
     title: "Swigato",

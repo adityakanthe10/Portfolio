@@ -17,10 +17,10 @@ const Navbar = () => {
       link:"#hero",
       // icon:
     },
-    {
-      name: "About",
-      link: "#about",
-    },
+    // {
+    //   name: "About",
+    //   link: "#about",
+    // },
     {
       name: "Technologies",
       link: "#technologies",
