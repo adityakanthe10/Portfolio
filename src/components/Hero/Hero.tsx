@@ -43,7 +43,7 @@ class Hero extends Component {
               >
                 Full Stack Developer
               </motion.span>
-              <motion.p
+              <motion.div
                 variants={this.container(1)}
                 initial="hidden"
                 animate="visible"
@@ -83,7 +83,7 @@ class Hero extends Component {
                     </button>
                   </div>
                 </div>
-              </motion.p>
+              </motion.div>
             </div>
           </div>
           <div className="w-full lg:w-1/2 lg:p-3">
