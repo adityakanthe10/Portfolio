@@ -12,12 +12,11 @@ export const PROJECTS = [
   {
     title: "Easy",
     image: Easy,
-    githublink:
-      "https://github.com/adityakanthe10/medium-blog",
+    githublink: "https://github.com/adityakanthe10/medium-blog",
     livelink: "https://medium-blog-lac.vercel.app/",
     description:
       "Easy built a modern, full-stack blogging platform designed for seamless content creation and secure user engagement.",
-    technologies: ["Next", "Node", "Express", "PostgreSQL"],
+    technologies: ["Next", "Cloudflare", "Honojs", "PostgreSQL"],
   },
   {
     title: "Swigato",
