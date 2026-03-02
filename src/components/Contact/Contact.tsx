@@ -14,6 +14,7 @@ class Contact extends Component {
           whileInView={{ opacity: 1, y: 0 }}
           initial={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="my-10 text-center text-4xl"
         >
           Get in Touch
@@ -22,6 +23,7 @@ class Contact extends Component {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
+          viewport={{ once: true }}
           className="text-center tracking-light "
         >
           <div className="Icons flex justify-center px-2">
@@ -29,6 +31,7 @@ class Contact extends Component {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
               className="my-4 hover:text-blue-50 flex items-center justify-center text-2xl px-2"
               target="_blank"
               rel="noopener noreferrer"
@@ -40,6 +43,7 @@ class Contact extends Component {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
               className="my-4 hover:text-blue-50 rounded flex items-center text-2xl px-2"
               target="_blank"
               rel="noopener noreferre"
@@ -51,6 +55,7 @@ class Contact extends Component {
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: 100 }}
               transition={{ duration: 1 }}
+              viewport={{ once: true }}
               className="my-4 hover:text-blue-50 flex items-center justify-center text-2xl px-2"
               target="_blank"
               rel="noopener noreferrer"
